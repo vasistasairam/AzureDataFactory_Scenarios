@@ -11,6 +11,14 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'ls_adls'"
 		},
+		"vasistadb_AzureSqlDatabase_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'vasistadb_AzureSqlDatabase'"
+		},
+		"AzureKeyVault_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://Vasista-KeyVault.vault.azure.net/"
+		},
 		"ls_adls_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://vasistasa.dfs.core.windows.net/"
@@ -44,6 +52,12 @@
 					},
 					"ls_adls_accountKey": {
 						"value": "[parameters('ls_adls_accountKey')]"
+					},
+					"vasistadb_AzureSqlDatabase_connectionString": {
+						"value": "[parameters('vasistadb_AzureSqlDatabase_connectionString')]"
+					},
+					"AzureKeyVault_properties_typeProperties_baseUrl": {
+						"value": "[parameters('AzureKeyVault_properties_typeProperties_baseUrl')]"
 					},
 					"ls_adls_properties_typeProperties_url": {
 						"value": "[parameters('ls_adls_properties_typeProperties_url')]"

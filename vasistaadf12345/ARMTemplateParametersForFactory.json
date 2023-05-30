@@ -8,6 +8,12 @@
 		"ls_adls_accountKey": {
 			"value": ""
 		},
+		"vasistadb_AzureSqlDatabase_connectionString": {
+			"value": ""
+		},
+		"AzureKeyVault_properties_typeProperties_baseUrl": {
+			"value": "https://Vasista-KeyVault.vault.azure.net/"
+		},
 		"ls_adls_properties_typeProperties_url": {
 			"value": "https://vasistasa.dfs.core.windows.net/"
 		}
