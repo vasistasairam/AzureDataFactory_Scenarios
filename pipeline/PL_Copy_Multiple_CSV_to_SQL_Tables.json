@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1",
+	"name": "PL_Copy_Multiple_CSV_to_SQL_Tables",
 	"properties": {
 		"activities": [
 			{
