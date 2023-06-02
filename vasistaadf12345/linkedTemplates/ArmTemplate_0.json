@@ -247,6 +247,10 @@
 										},
 										"sink": {
 											"type": "AzureSqlSink",
+											"preCopyScript": {
+												"value": "If Object_id('@{item().name}') IS NOT NULL TRUNCATE TABLE '@{item().name}'; SELECT 1 AS output;",
+												"type": "Expression"
+											},
 											"writeBehavior": "insert",
 											"sqlWriterUseTableLock": false,
 											"tableOption": "autoCreate",
